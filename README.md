@@ -39,6 +39,9 @@ Create -> Share -> Pay
    - `npm run dev`
 4. API available at:
    - `http://localhost:5000`
+5. Frontend origins allowed by CORS:
+   - Set `FRONTEND_ORIGIN` in `.env` (comma-separated allowed origins)
+   - Example: `http://localhost:3000,https://stellar-payments-web.vercel.app`
 
 ## How To Test Payment Flow
 1. Start API
@@ -56,6 +59,7 @@ Create -> Share -> Pay
    - `PORT=5000`
    - `HORIZON_URL=https://horizon-testnet.stellar.org`
    - `STELLAR_NETWORK_PASSPHRASE=Test SDF Network ; September 2015`
+   - `FRONTEND_ORIGIN=https://stellar-payments-web.vercel.app`
 
 ### Railway
 1. Create project and link repository
