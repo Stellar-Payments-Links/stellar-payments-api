@@ -20,6 +20,7 @@ app.use(
 );
 app.use(express.json());
 
+app.get("/", (_req, res) => res.json({ message: "Welcome to Stellar Payments API" }));
 app.get("/health", (_req, res) => res.json({ ok: true }));
 app.use(paymentRoutes);
 app.use(transactionRoutes);
