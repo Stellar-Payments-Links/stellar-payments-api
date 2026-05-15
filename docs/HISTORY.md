@@ -42,3 +42,4 @@
 - ci: add GitHub Actions workflow for build and tests
 - chore: add production Dockerfile
 - chore: add docker-compose for local API runs
+- feat: add reusable Stellar public key validator utility
