@@ -1,0 +1,25 @@
+openapi: 3.0.3
+info:
+  title: Stellar Payment Links API
+  version: 0.2.0
+paths:
+  /health:
+    get:
+      summary: Health check
+  /metrics:
+    get:
+      summary: Operational counters
+  /payments:
+    get:
+      summary: List payment links
+    post:
+      summary: Create payment link
+  /payments/{id}:
+    get:
+      summary: Get payment link
+  /payments/pay:
+    post:
+      summary: Process verified payment
+  /transactions:
+    get:
+      summary: List transactions (paginated)
