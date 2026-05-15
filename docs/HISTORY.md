@@ -43,3 +43,4 @@
 - chore: add production Dockerfile
 - chore: add docker-compose for local API runs
 - feat: add reusable Stellar public key validator utility
+- docs: update roadmap with completed Phase 2 items
