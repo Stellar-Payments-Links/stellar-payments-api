@@ -19,3 +19,4 @@
 - docs: document rate limiting behavior
 - feat: support filtering transactions by paymentId
 - feat: add pagination metadata to GET /transactions
+- docs: document transactions pagination query params
