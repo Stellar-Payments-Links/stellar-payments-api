@@ -18,3 +18,4 @@
 - feat: apply rate limiting to payment routes
 - docs: document rate limiting behavior
 - feat: support filtering transactions by paymentId
+- feat: add pagination metadata to GET /transactions
