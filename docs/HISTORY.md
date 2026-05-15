@@ -46,3 +46,4 @@
 - docs: update roadmap with completed Phase 2 items
 - docs: add security considerations document
 - docs: start project changelog
+- docs: add health badge to README
