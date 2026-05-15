@@ -45,3 +45,4 @@
 - feat: add reusable Stellar public key validator utility
 - docs: update roadmap with completed Phase 2 items
 - docs: add security considerations document
+- docs: start project changelog
