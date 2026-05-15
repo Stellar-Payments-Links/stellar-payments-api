@@ -39,3 +39,4 @@
 - docs: add initial OpenAPI specification
 - docs: document metrics endpoint in OpenAPI
 - test: add validator unit tests with node:test
+- ci: add GitHub Actions workflow for build and tests
