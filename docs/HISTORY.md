@@ -1,2 +1,3 @@
 - chore: pin Node.js 20 via .nvmrc
 - chore: pin Node.js 20 via .nvmrc
+- chore: expand gitignore for build artifacts and secrets
