@@ -1,23 +1,5 @@
 import { randomUUID } from "crypto";
-
-export type Payment = {
-  id: string;
-  title: string;
-  amount: string;
-  destinationPublicKey: string;
-  memo?: string;
-  status: "pending" | "paid";
-  createdAt: string;
-};
-
-export type TxRecord = {
-  id: string;
-  paymentId: string;
-  txHash: string;
-  amount: string;
-  payerPublicKey: string;
-  createdAt: string;
-};
+import { Payment, TxRecord } from "../types/models";
 
 const payments: Payment[] = [];
 const transactions: TxRecord[] = [];
@@ -36,6 +18,9 @@ export const storageService = {
   getPayment(id: string): Payment | undefined {
     return payments.find((p) => p.id === id);
   },
+  listPayments(): Payment[] {
+    return [...payments];
+  },
   markPaid(paymentId: string) {
     const payment = payments.find((p) => p.id === paymentId);
     if (payment) payment.status = "paid";
@@ -45,7 +30,7 @@ export const storageService = {
     transactions.unshift(tx);
     return tx;
   },
-  listTransactions(): TxRecord[] {
-    return transactions;
+  listTransactions(paymentId?: string): TxRecord[] {
+    return paymentId ? transactions.filter((t) => t.paymentId === paymentId) : transactions;
   }
 };
