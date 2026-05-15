@@ -35,3 +35,4 @@
 - feat: add webhook URL and secret env configuration
 - feat: add webhook delivery service for confirmed payments
 - feat: dispatch webhook and metrics on successful payment
+- docs: add webhook event schema documentation
