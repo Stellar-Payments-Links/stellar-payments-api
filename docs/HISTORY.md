@@ -22,3 +22,4 @@
 - docs: document transactions pagination query params
 - feat: add listPayments to storage service
 - feat: add GET /payments listing endpoint
+- feat: add in-memory metrics counters
