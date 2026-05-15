@@ -17,3 +17,4 @@
 - feat: add in-memory IP rate limiter
 - feat: apply rate limiting to payment routes
 - docs: document rate limiting behavior
+- feat: support filtering transactions by paymentId
