@@ -26,3 +26,4 @@
 - feat: expose GET /metrics for operational counters
 - feat: increment metrics on payment creation
 - feat: add Horizon payment operation matcher
+- feat: fetch transaction operations from Horizon
