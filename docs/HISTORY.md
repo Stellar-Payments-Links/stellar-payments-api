@@ -3,3 +3,4 @@
 - chore: expand gitignore for build artifacts and secrets
 - refactor: extract Payment and TxRecord types
 - refactor: use shared models in storage service
+- feat: add pagination helper utilities
