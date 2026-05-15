@@ -33,3 +33,4 @@
 - feat: wire idempotency middleware to pay route
 - docs: document idempotency header for pay endpoint
 - feat: add webhook URL and secret env configuration
+- feat: add webhook delivery service for confirmed payments
