@@ -31,3 +31,4 @@
 - feat: add in-memory idempotency store
 - feat: add Idempotency-Key middleware for /payments/pay
 - feat: wire idempotency middleware to pay route
+- docs: document idempotency header for pay endpoint
