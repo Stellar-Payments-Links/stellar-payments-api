@@ -14,3 +14,4 @@
 - feat: add 404 not-found handler
 - feat: register error and not-found handlers
 - feat: add rate limit configuration to env
+- feat: add in-memory IP rate limiter
