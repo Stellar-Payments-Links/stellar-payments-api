@@ -1,17 +1,19 @@
 import { Request, Response, NextFunction } from "express";
 import { z } from "zod";
 
+const stellarKey = z.string().regex(/^G[A-Z2-7]{55}$/);
+
 const createPaymentSchema = z.object({
   title: z.string().min(2),
   amount: z.string().regex(/^\d+(\.\d+)?$/),
-  destinationPublicKey: z.string().startsWith("G"),
+  destinationPublicKey: stellarKey,
   memo: z.string().max(28).optional()
 });
 
 const paySchema = z.object({
   paymentId: z.string().min(1),
   txHash: z.string().min(10),
-  payerPublicKey: z.string().startsWith("G"),
+  payerPublicKey: stellarKey,
   amount: z.string().regex(/^\d+(\.\d+)?$/)
 });
 
