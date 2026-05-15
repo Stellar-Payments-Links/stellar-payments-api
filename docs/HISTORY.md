@@ -15,3 +15,4 @@
 - feat: register error and not-found handlers
 - feat: add rate limit configuration to env
 - feat: add in-memory IP rate limiter
+- feat: apply rate limiting to payment routes
