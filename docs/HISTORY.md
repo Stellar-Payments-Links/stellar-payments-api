@@ -21,3 +21,4 @@
 - feat: add pagination metadata to GET /transactions
 - docs: document transactions pagination query params
 - feat: add listPayments to storage service
+- feat: add GET /payments listing endpoint
