@@ -10,3 +10,4 @@
 - feat: enrich health endpoint with service metadata
 - docs: document health check response shape
 - fix: validate Stellar public key length in Zod schemas
+- feat: add centralized error handler middleware
