@@ -6,3 +6,4 @@
 - feat: add pagination helper utilities
 - feat: add request correlation ID middleware
 - feat: add structured JSON request logging
+- feat: wire request ID and logging into app
