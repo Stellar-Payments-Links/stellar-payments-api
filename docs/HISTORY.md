@@ -38,3 +38,4 @@
 - docs: add webhook event schema documentation
 - docs: add initial OpenAPI specification
 - docs: document metrics endpoint in OpenAPI
+- test: add validator unit tests with node:test
