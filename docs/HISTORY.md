@@ -49,3 +49,4 @@
 - docs: add health badge to README
 - chore: bump API version to 0.2.0
 - docs: note Node 20 in README setup
+- chore: align package test script with CI
