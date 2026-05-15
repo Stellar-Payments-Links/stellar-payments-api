@@ -51,3 +51,4 @@
 - docs: note Node 20 in README setup
 - chore: align package test script with CI
 - docs: expand README deployment notes for webhooks
+- chore: finalize OpenAPI path descriptions
