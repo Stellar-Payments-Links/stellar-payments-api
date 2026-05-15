@@ -4,3 +4,4 @@
 - refactor: extract Payment and TxRecord types
 - refactor: use shared models in storage service
 - feat: add pagination helper utilities
+- feat: add request correlation ID middleware
