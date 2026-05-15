@@ -8,3 +8,4 @@
 - feat: add structured JSON request logging
 - feat: wire request ID and logging into app
 - feat: enrich health endpoint with service metadata
+- docs: document health check response shape

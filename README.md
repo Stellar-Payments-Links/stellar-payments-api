@@ -9,6 +9,29 @@ Without lightweight APIs, non-technical users struggle to generate reusable paym
 ## Solution
 This Express API stores payment metadata, validates requests, and verifies submitted transaction hashes against Stellar Horizon API. It avoids custodial risk by never receiving private keys.
 
+## API Status
+
+![health](https://img.shields.io/badge/health-GET%20%2Fhealth-brightgreen)
+
+## Health Check
+`GET /health` returns:
+
+```json
+{ "ok": true, "service": "stellar-payments-api", "version": "0.2.0" }
+```
+
+## Rate Limiting
+Payment routes return `429` when limits are exceeded. Configure via `RATE_LIMIT_WINDOW_MS` and `RATE_LIMIT_MAX`.
+
+## Pagination
+`GET /transactions?page=1&limit=20&paymentId=<uuid>` returns paginated results with metadata.
+
+## Idempotency
+Send `Idempotency-Key` on `POST /payments/pay` to safely retry without duplicate processing.
+
+## Node version
+Use `nvm use` with the included `.nvmrc` (Node 20).
+
 ## Key Features
 - `POST /payments` create payment link metadata
 - `GET /payments/:id` read payment request details
