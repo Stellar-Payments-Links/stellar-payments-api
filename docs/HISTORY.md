@@ -28,3 +28,4 @@
 - feat: add Horizon payment operation matcher
 - feat: fetch transaction operations from Horizon
 - feat: verify payment amount and destination via Horizon ops
+- feat: add in-memory idempotency store
