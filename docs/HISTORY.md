@@ -12,3 +12,4 @@
 - fix: validate Stellar public key length in Zod schemas
 - feat: add centralized error handler middleware
 - feat: add 404 not-found handler
+- feat: register error and not-found handlers
