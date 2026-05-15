@@ -37,3 +37,4 @@
 - feat: dispatch webhook and metrics on successful payment
 - docs: add webhook event schema documentation
 - docs: add initial OpenAPI specification
+- docs: document metrics endpoint in OpenAPI
