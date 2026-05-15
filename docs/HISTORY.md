@@ -23,3 +23,4 @@
 - feat: add listPayments to storage service
 - feat: add GET /payments listing endpoint
 - feat: add in-memory metrics counters
+- feat: expose GET /metrics for operational counters
